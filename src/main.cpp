@@ -4,7 +4,7 @@
 int main() {
     GestorDB gestor;
     gestor.loadDB("mytestdb");
-    std::vector<std::string> vec1 = {"id","name","age"};
-    gestor.insertToTable("apulo",vec1);
+    std::vector<std::string> dt{"int", "varchar", "int"};
+    gestor.createTable("datos_backup", dt);
     return 0;
 }

@@ -6,15 +6,13 @@
 #include "Data.h"
 
 Data::Data(const std::vector<std::string> &DataTypes, const std::vector<std::string> &Data1, const int &Dim) {
-    if(DataTypes.size() != Dim){
+    if (DataTypes.size() != Dim) {
         std::cerr << "Wrong number of Dimensions of DataTypes" << std::endl;
         exit(100);
-    }
-    else if(Data1.size() != Dim){
+    } else if (Data1.size() != Dim) {
         std::cerr << "Wrong number of Dimensions of Data" << std::endl;
         exit(100);
-    }
-    else {
+    } else {
         DataType = DataTypes;
         CData = Data1;
         Dimensions = Dim;
